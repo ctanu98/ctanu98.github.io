@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> My Personal Space 🚀 </title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- navigation bar (the ones on the top of page) -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#watch"> Stuff I Watch </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+    </nav>
+
+    <!-- creating the typewriter effect to homepage -->
+    <section id="home" class="page">
+        <h1 class="typewriter"> Hello, World! </h1>
+        <p class="fade-in-delayed"> see me through the screens </p>
+    </section>
+
+    <section id="about" class="page fade-in-up">
+        <h2> About Me </h2>
+        <p style="text-align: center">
+            <br><br>
+            Hiya there,
+            <br><br>
+            Welcome to the catalog website! So happy to have you here :D
+            <br>
+            I am a Computer Science student at Santa Monica College. I love to 
+            watch movies and series during my free time. 
+            <br>
+            In this website, I am going
+            to show you the movies, series, and animes that holds a special place in 
+            my heart. 
+            <br> 
+            I grew up watching them, and they pretty much portray some
+            parts of me. 
+            <br> 
+            For example, how I am a curious person in general (therefore,
+            the detective movies). 
+        </p>
+    </section>
+
+    <!-- page 3: stuff I watch and its dropdown contents -->
+    <section id="watch" class="page fade-in-up">
+        <h2> Stuff I Watch </h2>
+      
+        <!-- Controls for search/filter/sort -->
+        <div class="controls">
+          <input type="text" id="searchInput" placeholder="Search by title..." />
+          
+          <select id="genreFilter">
+            <option value="All"> All Genres </option>
+          </select>
+      
+          <select id="ratingFilter">
+            <option value="All"> All Ratings </option>
+            <option value="9"> 9 and up </option>
+            <option value="8"> 8 and up </option>
+            <option value="7"> 7 and up </option>
+            <option value="other"> Below 7 </option>
+          </select>
+      
+          <select id="sortBy">
+            <option value="default"> Sort by </option>
+            <option value="ratingHigh"> Highest Rating </option>
+            <option value="ratingLow"> Lowest Rating </option>
+            <option value="yearNew"> Latest </option>
+            <option value="yearOld"> Oldest </option>
+            <option value="titleAZ"> A - Z </option>
+            <option value="titleZA"> Z - A </option>
+          </select>
+        </div>
+      
+        <!-- Where cards appear -->
+        <div id="catalogContainer"></div>
+    </section>      
+
+    <section id="contact" class="page fade-in-up">
+        <h2> Contact </h2>
+        <p> 
+            Thank you for making it this far! 🎉
+            <br>
+            Hope you enjoy the website and don't hesitate to contact me here:
+            <br>
+            <strong> LinkedIn: Celine Tanu </strong>
+            <br> 
+            <strong> Email: celine.tanu@gmail.com </strong>
+        </p>
+    </section>
+    <div class="footer">
+        <button onclick="quoteAlert();">Get A Quote!</button>
+        <button onclick="removeLastCard();">Remove A Card!</button>
+     </div>
+    
+    <script src="scripts.js"></script>
+  </body>
+</html>
